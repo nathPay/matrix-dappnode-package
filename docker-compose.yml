@@ -1,0 +1,23 @@
+version: '3.4'
+services:
+  generate:
+    image: 'matrixdotorg/synapse:v1.3.1'
+    command: generate
+    environment:
+      - SYNAPSE_SERVER_NAME=matrix-titou.ddns.net
+      - SYNAPSE_REPORT_STATS=no
+    volumes: 
+      - 'synapse-data:/data'
+
+  matrix.public.dappnode.eth:
+    image: 'matrix.public.dappnode.eth:0.1.0'
+    build: ./build
+    volumes: 
+      - 'synapse-data:/data'
+    ports:
+      - "8008:8008"
+    links:
+      - generate
+
+volumes:
+  synapse-data:

@@ -1,0 +1,25 @@
+{
+  "name": "matrix.public.dappnode.eth",
+  "version": "0.1.0",
+  "description": "Run your own matrix server",
+  "avatar": "/ipfs/QmREdveAKhSvxwPRaQyRm5u6LQ9hC3BDwnFqWxyruDvMuX",
+  "type": "service",
+  "image": {
+    "path": "",
+    "hash": "",
+    "size": "",
+    "volumes": [],
+    "ports": [],
+    "environment": [],
+    "restart": "always"
+  },
+  "dependencies": {},
+  "author": "Nathan Payre (https://github.com/nathPay)",
+  "categories": [
+    "Developer tools"
+  ],
+  "links": {
+    "homepage": "https://your-project-homepage-or-docs.io"
+  },
+  "license": "GLP-3.0"
+}
